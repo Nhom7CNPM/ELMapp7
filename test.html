@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Trường đại học Thủy Lợi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="/assets/login/style.css">
+	
+	<!--Angular asset-->
+    <script src='/Assets/angular179/angular.js'></script>
+    <script src='/Assets/angular179/angular-animate.js'></script>
+    <script src="/Assets/angular179/angular-sanitize.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="0.11.0" src="/Assets/ui-bootstrap-tpls-2.5.0.js"></script>
+    <link href="/Assets/font-awesome.css" rel="stylesheet">
+    <script src="/Assets/angular-toastr.tpls.js"></script>
+    <link href="/Assets/angular-toastr.css" rel="stylesheet" />
+	
+</head>
+<body ng-app="myApp">
+<!-- partial:index.partial.html -->
+<div class="signup__container" ng-controller="myCntrl as demo">
+ <script type="text/javascript">
+	app = angular.module("myApp", ['ui.bootstrap', 'ngSanitize', 'blockUI']);
+	var baseUrl = "/DesktopModules/EOfficeWeb/api";
+</script>
+<link rel="stylesheet" type="text/css" href="/Assets/blockUI/angular-block-ui.css">
+<script type="text/javascript" src="/Assets/blockUI/angular-block-ui.js"></script>
+<script src="/DesktopModules/EOfficeWeb/scripts/Authentication/AuthenService.js"></script>
+<script src="/DesktopModules/EOfficeWeb/scripts/Authentication/AuthenController.js"></script>
+  <div class="container__child signup__thumbnail">
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form" my-enter="Login()">
+    <form action="#">
+      <div class="form-group" style="margin-top:25px">
+        <label for="username">Tên đăng nhập</label>
+        <input class="form-control" type="text" name="username" id="username" placeholder="tài khoản đăng nhập" required ng-model="Username"/>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <input class="form-control" type="password" name="password" id="password" placeholder="********" required ng-model="Password"/>
+      </div>
+      
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+			<button class="btn btn--form" type="button" ng-click="Login()">Đăng nhập</button>
+            
+          </li>
+          
+        </ul>
+      </div>
+	  <div>
+		<p style="color:#111">
+			Bạn chưa có tài khoản? <a href="javascript:;" class="">Gửi yêu cầu</a> tạo tài khoản mới
+		</p>
+	  </div>
+	  <div>
+			<a href="javascript:;" class="">Bạn đã quên mật khẩu?</a>
+	  </div>
+    </form>  
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

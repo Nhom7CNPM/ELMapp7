@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Zing ID - Zing Passport - Tài khoản Zing của VNG</title>
+        <link rel="shortcut icon" href="https://stc-id.zing.vn/favicon.ico" />
+        <script type="text/javascript" src="https://stc-id.zing.vn/xlogin/js/zmCore-1.46.min.js"></script>
+        <script type="text/javascript" src="https://stc-id.zing.vn/xlogin/js/swfobject.js"></script>
+        <script type="text/javascript" src="https://stc-id.zing.vn/xlogin/js/zmxcall.js"></script>
+        <!--<script type="text/javascript" src="https://stc-id.zing.vn/login/js/tracking_hotgame_hotevent.js"></script>-->
+        <script type="text/javascript" src="https://stc-id.zing.vn/login/js/tracking_hotgame_hotevent.js"></script>
+
+        <link href="https://stc-id.zing.vn/login/css/zingid_02_18.css" rel="stylesheet" type="text/css" />
+        <link href="https://stc-id.zing.vn/login/css/zingid_mobile_02_1.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://stc-id.zing.vn/login/css/zingid_idc_validation_02_1.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-48855423-1', 'zing.vn');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+        </script>
+        <script src='https://stc-id.zing.vn/login/js/zingid_mobile_02_1.min.js'></script>
+        <script src='https://id.zing.vn/static/js/zingid-idc-validation_02_1.js'></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            var zid = {
+                baseUrl: "https://id.zing.vn/v2",
+                apikey: "92140c0e46c54994812403f564787c14",
+                pid: "38",
+                loginUrl: "https://id.zing.vn/v2/login?apikey=92140c0e46c54994812403f564787c14&pid=38",
+                goLogin: function() {
+                    location.href = "https://id.zing.vn/v2/login?apikey=92140c0e46c54994812403f564787c14&pid=38&next=https%3A%2F%2Fid.zing.vn%2Fv2%2Finfosetting%3Fapikey%3D92140c0e46c54994812403f564787c14%26pid%3D38";
+                },
+                chgEmailUrl: function(email) {
+                    location.href = "https://id.zing.vn/v2/emailactive/change?apikey=92140c0e46c54994812403f564787c14&pid=38&email=" + email;
+                }
+            };
+        </script>
+
+        <script type="text/javascript" src="https://stc-id.zing.vn/xlogin/js/zm.ui-2.15.min.js"></script>            
+        <script type="text/javascript" src="https://stc-id.zing.vn/login/js/zid_27.js"></script>
+        <link href="https://stc-id.zing.vn/login/css/jcarousel.basic-1.01.css" rel="stylesheet" type="text/css">
+        <script src="https://stc-id.zing.vn/login/js/jquery-1.9.1.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://stc-id.zing.vn/login/js/jquery.jcarousel.min.js"></script>
+
+            <div class="zid_header">
+                <div class="zid_header_inner">
+                    <input id="serverdomain" type="hidden" value="https://id.zing.vn/v2"></input>
+                    <input id="acn" type="hidden" value=""></input>
+                    <h1 class="zidlogo"><a class="zidsprt" href="https://id.zing.vn/v2?apikey=92140c0e46c54994812403f564787c14&pid=38" title="Trang chủ Zing ID">Zing ID</a></h1>
+
+
+                    
+
+                    
+
+                </div>
+            </div>
+            
+            <div class="zidbody">
+                <div class="zid_loginform" style="position: relative;">
+    <div id="login-loading" class="loadingfrm" style="margin: -15px -20px;">
+        <img src="https://stc-id.zing.vn/login/images/loader.gif" style="height: 100px;padding-top:70px;" />       
+    </div>
+
+    <h2 class="formheader">Đăng nhập</h2> 
+    <form id="frmLogin" onsubmit="submitLogin(); return false;"  name="frmLogin" action="https://sso3.zing.vn/alogin" method="post" enctype="application/x-www-form-urlencoded" >
+        <input type="hidden" name="pid" value="38"/>
+        <input type="hidden" name="u1" value="https://id.zing.vn/v2/login/cb?apikey=92140c0e46c54994812403f564787c14&pid=38&_src=&utm_source=&utm_medium=&utm_term=&utm_content=&utm_campaign=&next=https%3A%2F%2Fid.zing.vn%2Fv2%2Finfosetting%3Fapikey%3D92140c0e46c54994812403f564787c14%26pid%3D38&referer="/>
+        <input type="hidden" name="fp" value="https://id.zing.vn/v2/login/cb?apikey=92140c0e46c54994812403f564787c14&pid=38&_src=&utm_source=&utm_medium=&utm_term=&utm_content=&utm_campaign=&next=https%3A%2F%2Fid.zing.vn%2Fv2%2Finfosetting%3Fapikey%3D92140c0e46c54994812403f564787c14%26pid%3D38&referer="/>
+        <input type="hidden" name="apikey" value="92140c0e46c54994812403f564787c14"/>
+        <input style="display:none">
+        <input type="password" style="display:none">
+        
+
+        <div rel="Notice" class="msgtooltip posleft error show"  id ="login_account_error">
+            <span class="tooltiparrow zidsprt"></span>
+            <div class="tooltipbody">
+                <span class="tipmsg_icon"></span>
+                <div class="tipcontent"></div>
+            </div>
+        </div>
+        <p class="finput">
+            <input tabindex="1" value="" autocomplete="off"  class="input_login" type="text" name="u" id="login_account" placeholder="Tên, email hoặc số điện thoại" />
+        </p>
+        <script>
+            $("#login_account").val("");
+            </script>
+        <div rel="Notice" class="msgtooltip posleft error show" id ="login_pwd_error">
+            <span class="tooltiparrow zidsprt"></span>
+            <div class="tooltipbody">
+                <span class="tipmsg_icon"></span>
+                <div class="tipcontent" ></div>
+            </div>
+        </div>
+        <p class="finput">
+            <input type="text" class="input_login" id="fake_login_pwd" value="Mật khẩu" style="display:none"  tabindex="2"/>
+            <input  type="password" class="input_login"  name="p" id="login_pwd" placeholder="Mật khẩu"  tabindex="2" />
+        </p>
+
+        <div class="zidfbot">
+            <a tabindex="3" href="#" onclick="submitLogin();" class="zidsignin_btn" title="Đăng nhập">Đăng nhập</a>
+            <p><a href='https://id.zing.vn/v2/forgotinfo?apikey=92140c0e46c54994812403f564787c14&pid=38'>Quên mật khẩu?</a></p>
+        </div>
+    </form>
+
+</div>
+<div class="zidlogincont">
+  <p class="txtintro">
+        Chỉ với một tài khoản Zing ID,<br> 
+        sử dụng được cho các game của VNG.
+    </p>
+    <p><a href="/v2/register?apikey=92140c0e46c54994812403f564787c14&pid=38&next=https%3A%2F%2Fid.zing.vn%2Fv2%2Finfosetting%3Fapikey%3D92140c0e46c54994812403f564787c14%26pid%3D38" class="zidregbtn" title="Đăng ký ngay">Đăng ký ngay</a></p>
+
+    <div class="otheracclogin">
+        <p class="htext">Hoặc đăng nhập với tài khoản khác</p>
+        <ul class="accbtns">            
+            <li><a class="fb_acc" href="javascript:void(0)" onclick="zmXLoginWg.openPopup('facebook', 'cb');
+                                return false;" title="Facebook"><span class="acc_btnicn"></span>Facebook</a></li>
+            <li><a class="gplus_acc" href="javascript:void(0)" onclick="zmXLoginWg.openPopup('google', 'cb');
+                                return false;" title="Google+"><span class="acc_btnicn"></span>Google+</a></li>
+        </ul>
+    </div>
+</div>
+<div class="clr"></div>
+
+<!--<div class="qcbanner_login" style="display:">
+    <div class="zid_promote">
+        <h3><em class="htitle_icon"></em>Các sản phẩm sử dụng Zing ID</h3>
+        <div class="app_suggestion clearfix">
+            <ul id ="listapp">  
+                
+            </ul>
+        </div>
+    </div>
+</div>-->
+
+
+<!--<div class="loginbanner" style="display:">
+    <iframe width="0" height="0" src="http://me.zing.vn/utype/kvtm?po=bannerid" style="display:none"></iframe>
+    <a href="http://goo.gl/LAVyq9" target="_blank">
+        <img src="https://stc-id.zing.vn/login/images/banner/zmmb_wc_v2_800x90.swf" width="800" height="90" alt="" />
+        <embed src="https://stc-id.zing.vn/login/images/banner/zmmb_wc_v2_800x90.swf?clickTAG=http://goo.gl/LAVyq9" width="800" height="90" alt="" />
+    </a>
+</div>-->
+
+
+<!--<script language="javascript" src="https://stc-id.zing.vn/xlogin/js/zid_xlogin_1.06.js" type="text/javascript"></script>-->
+
+<script type="text/javascript">
+                    window.zAsyncInit = function() {
+                    zmeOpenWidget.init({
+                    apikey: '92140c0e46c54994812403f564787c14',
+                            pid: '38',
+                            callback: 'cb',
+                            tpl: '5'
+                    });
+                    };
+                    function cb(cbdata, acn, zid, uin, autcode, obj) {
+                    location.reload();
+                    };
+                    (function(d) {
+                    var js, id = 'widget-jssdk', ref = d.getElementsByTagName('script')[0];
+                            if (d.getElementById(id)) {
+                    return;
+                    }
+                    js = d.createElement('script');
+                            js.id = id;
+                            js.async = true;
+                            var t = Math.floor(Math.random() * 10000);
+                            js.src = "https://stc-id.zing.vn/widget/js/openwidget4.js?t=" + t;
+                            ref.parentNode.insertBefore(js, ref);
+                    }(document));</script>
+<script language="javascript" type="text/javascript" src="https://stc-id.zing.vn/login/js/zid_login_1.11.js" ></script>
+
+
+                
+                
+                
+                            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+
+            <div class="zidfooter">
+                <div class="zidfooter_inner">
+                    <div class="zidfooter_left">
+                        Copyright © 2013 Zing<br />
+                        Đơn vị chủ quản: VNG Corporation. Giấy phép ICP số: 41/GP-TTĐT.
+                    </div>
+                    <ul class="zidfooter_right">
+                        <li><a target="_blank" href="https://id.zing.vn/v2/guide-faq">Hỏi đáp</a></li>
+                        <li class="dot"></li>
+                        <li><a target="_blank" href="https://id.zing.vn/v2/guide-faq#g1_1">Hướng dẫn</a></li>
+                        <li class="dot"></li>
+                        <li><a target="_blank" href="https://hotro.zing.vn/" title="Hỗ trợ">Hỗ trợ</a></li>
+    <li class="dot"></li>
+                        <li><a target="_blank" href="https://id.zing.vn/v2/policy" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                    
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+            </div>
+    </body>
+</html>
+
